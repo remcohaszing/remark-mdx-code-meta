@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "module": "commonjs",
+    "noEmit": true,
+    // Because hast-util-to-string is untyped
+    "noImplicitAny": false,
+    "rootDir": "src",
+    "strict": true,
+    "target": "es2018"
+  }
+}
