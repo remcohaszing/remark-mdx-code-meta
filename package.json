@@ -1,6 +1,6 @@
 {
   "name": "remark-mdx-code-meta",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A remark MDX plugin for using markdown code block metadata",
   "main": "dist/index.js",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
