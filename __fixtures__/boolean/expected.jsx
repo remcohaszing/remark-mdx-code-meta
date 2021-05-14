@@ -11,7 +11,7 @@ function MDXContent(props) {
   const _content = (
     <>
       {
-        <_components.pre onClick={props.onClick}>
+        <_components.pre copy>
           <_components.code className="language-js">
             {"console.log('Hello World!');\n"}
           </_components.code>
