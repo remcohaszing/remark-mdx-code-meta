@@ -6,6 +6,7 @@
     // Because hast-util-to-string is untyped
     "noImplicitAny": false,
     "rootDir": "src",
+    "skipLibCheck": true,
     "strict": true,
     "target": "es2018"
   }

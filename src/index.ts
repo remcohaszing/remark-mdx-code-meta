@@ -1,6 +1,6 @@
-import * as jsx from 'acorn-jsx';
 import { Parser } from 'acorn';
-import { Code } from 'mdast';
+import * as jsx from 'acorn-jsx';
+import { Code, Literal } from 'mdast';
 import { Plugin, Transformer } from 'unified';
 import * as visit from 'unist-util-visit';
 
@@ -15,7 +15,7 @@ export const transformer: Transformer = (ast) => {
     const codeProps = node.lang ? `className="language-${node.lang}"` : '';
     const value = `<pre ${node.meta}><code ${codeProps}>{${code}}</code></pre>`;
     const estree = parser.parse(value, { ecmaVersion: 'latest' });
-    parent!.children[index] = { type: 'mdxFlowExpression', value, data: { estree } };
+    parent!.children[index] = { type: 'mdxFlowExpression', value, data: { estree } } as Literal;
   });
 };
 
