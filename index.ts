@@ -29,4 +29,6 @@ const transformer: Transformer<Root> = (ast) => {
  *
  * @returns A unified transformer.
  */
-export const remarkMdxCodeMeta: Plugin<[], Root> = () => transformer;
+const remarkMdxCodeMeta: Plugin<[], Root> = () => transformer;
+
+export default remarkMdxCodeMeta;

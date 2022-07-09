@@ -7,7 +7,7 @@ import { toVFile } from 'to-vfile';
 import { test } from 'uvu';
 import { equal } from 'uvu/assert';
 
-import { remarkMdxCodeMeta } from './index.js';
+import remarkMdxCodeMeta from './index.js';
 
 const tests = await readdir('__fixtures__');
 
