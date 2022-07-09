@@ -30,7 +30,7 @@
   },
   "scripts": {
     "prepack": "tsc --project tsconfig.build.json",
-    "test": "tsx test.ts"
+    "test": "c8 tsx test.ts"
   },
   "dependencies": {
     "acorn": "^8.0.0",
@@ -46,6 +46,7 @@
     "@types/node": "^18.0.0",
     "@types/prettier": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "c8": "^7.0.0",
     "eslint": "^8.0.0",
     "eslint-config-remcohaszing": "^5.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
