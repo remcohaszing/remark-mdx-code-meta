@@ -23,13 +23,13 @@
     "xdm"
   ],
   "files": [
-    "dist"
+    "index.js"
   ],
   "engines": {
     "node": ">=12.2.0"
   },
   "scripts": {
-    "prepack": "tsc --project tsconfig.build.json",
+    "prepack": "tsc --noEmit",
     "test": "c8 tsx test.ts"
   },
   "dependencies": {
