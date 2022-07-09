@@ -12,8 +12,11 @@ const transformer: Transformer<Root> = (ast) => {
     if (!node.meta) {
       return;
     }
+    if (!node.lang) {
+      return;
+    }
     const code = JSON.stringify(`${node.value}\n`);
-    const codeProps = node.lang ? `className="language-${node.lang}"` : '';
+    const codeProps = `className="language-${node.lang}"`;
     const value = `<pre ${node.meta}><code ${codeProps}>{${code}}</code></pre>`;
     const estree = parser.parse(value, { ecmaVersion: 'latest' }) as BaseNode as Program;
     parent!.children[index!] = {
