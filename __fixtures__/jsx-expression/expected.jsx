@@ -1,14 +1,13 @@
 /*@jsxRuntime automatic @jsxImportSource react*/
-function MDXContent(props = {}) {
+function _createMdxContent(props) {
   const _components = Object.assign(
-      {
-        pre: "pre",
-        code: "code",
-      },
-      props.components
-    ),
-    { wrapper: MDXLayout } = _components;
-  const _content = (
+    {
+      pre: "pre",
+      code: "code",
+    },
+    props.components
+  );
+  return (
     <>
       {
         <_components.pre onClick={props.onClick}>
@@ -19,6 +18,15 @@ function MDXContent(props = {}) {
       }
     </>
   );
-  return MDXLayout ? <MDXLayout {...props}>{_content}</MDXLayout> : _content;
+}
+function MDXContent(props = {}) {
+  const { wrapper: MDXLayout } = props.components || {};
+  return MDXLayout ? (
+    <MDXLayout {...props}>
+      <_createMdxContent {...props} />
+    </MDXLayout>
+  ) : (
+    _createMdxContent(props)
+  );
 }
 export default MDXContent;
