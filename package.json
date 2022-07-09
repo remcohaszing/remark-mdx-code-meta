@@ -2,9 +2,9 @@
   "name": "remark-mdx-code-meta",
   "version": "1.0.0",
   "description": "A remark MDX plugin for using markdown code block metadata",
-  "main": "dist/index.js",
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/remcohaszing/remark-mdx-code-meta.git"
@@ -30,28 +30,30 @@
   },
   "scripts": {
     "prepack": "tsc --project tsconfig.build.json",
-    "test": "ts-node index.test.mjs"
+    "test": "tsx test.ts"
   },
   "dependencies": {
     "acorn": "^8.0.0",
     "acorn-jsx": "^5.0.0",
-    "estree-util-is-identifier-name": "^1.0.0",
-    "hast-util-to-string": "^1.0.0",
-    "unist-util-visit": "^2.0.0"
+    "estree-util-is-identifier-name": "^2.0.0",
+    "hast-util-to-string": "^2.0.0",
+    "unified": "^10.0.0",
+    "unist-util-visit": "^4.0.0"
   },
   "devDependencies": {
     "@mdx-js/mdx": "^2.0.0",
-    "@types/estree": "^0.0.50",
+    "@types/estree": "^0.0.52",
+    "@types/node": "^18.0.0",
+    "@types/prettier": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "eslint": "^8.0.0",
     "eslint-config-remcohaszing": "^5.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.0.0",
     "prettier": "^2.0.0",
-    "tape": "^5.0.0",
     "to-vfile": "^7.0.0",
-    "ts-node": "^9.0.0",
+    "tsx": "^3.0.0",
     "typescript": "^4.0.0",
-    "unified": "^9.0.0"
+    "uvu": "^0.5.0"
   }
 }

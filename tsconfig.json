@@ -1,13 +1,12 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "module": "commonjs",
+    "module": "node16",
+    "moduleResolution": "node",
     "noEmit": true,
-    // Because hast-util-to-string is untyped
-    "noImplicitAny": false,
-    "rootDir": "src",
     "skipLibCheck": true,
     "strict": true,
-    "target": "es2018"
+    "target": "es2018",
+    "types": ["mdast-util-mdx", "node"]
   }
 }

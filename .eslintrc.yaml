@@ -4,3 +4,4 @@ extends:
 rules:
   no-param-reassign: off
   import/no-extraneous-dependencies: off
+  import/no-unresolved: off
