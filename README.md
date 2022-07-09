@@ -1,9 +1,10 @@
 # remark-mdx-code-meta
 
-[![github actions][github actions badge]][github actions] [![npm][npm badge]][npm]
-[![prettier][prettier badge]][prettier]
+[![github actions](https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml/badge.svg)](https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/remark-mdx-code-meta)](https://www.npmjs.com/package/remark-mdx-code-meta)
+[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
 
-> A [remark][] MDX plugin for using markdown code block metadata
+A [remark](https://remark.js.org) MDX plugin for using markdown code block metadata
 
 ## Installation
 
@@ -53,12 +54,6 @@ export default function MDXContent(props) {
 Of course the `<pre />` element doesn’t support those custom props. Use custom [components][] to
 give the props meaning.
 
-[components]: https://github.com/wooorm/xdm#components
-[github actions badge]:
-  https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml/badge.svg
-[github actions]: https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml
-[npm badge]: https://img.shields.io/npm/v/remark-mdx-code-meta
-[npm]: https://www.npmjs.com/package/remark-mdx-code-meta
-[prettier badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
-[prettier]: https://prettier.io
-[remark]: https://remark.js.org
+### License
+
+[MIT](LICENSE.md) @ [Remco Haszing](https://github.com/remcohaszing)
