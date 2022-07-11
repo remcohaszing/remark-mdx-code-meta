@@ -35,13 +35,14 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12, 14, 16, 18]
+        node-version: [14, 16, 18]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install --global npm@latest
+        if: ${{ matrix.node-version == 14 }}
       - run: npm ci
       - run: npx test
       - uses: codecov/codecov-action@v3
