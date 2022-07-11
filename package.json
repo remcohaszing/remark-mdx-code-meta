@@ -30,6 +30,7 @@
   },
   "scripts": {
     "prepack": "tsc --noEmit",
+    "start": "tsx watch test.ts",
     "test": "c8 tsx test.ts"
   },
   "dependencies": {
