@@ -3,6 +3,7 @@
 [![github actions](https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml/badge.svg)](https://github.com/remcohaszing/remark-mdx-code-meta/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/remark-mdx-code-meta)](https://www.npmjs.com/package/remark-mdx-code-meta)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io)
+[![codecov](https://codecov.io/gh/remcohaszing/remark-mdx-code-meta/branch/main/graph/badge.svg)](https://codecov.io/gh/remcohaszing/remark-mdx-code-meta)
 
 A [remark](https://remark.js.org) MDX plugin for using markdown code block metadata
 

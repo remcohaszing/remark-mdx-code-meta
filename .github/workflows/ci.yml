@@ -44,6 +44,8 @@ jobs:
       - run: npm install --global npm@latest
       - run: npm ci
       - run: npx test
+      - uses: codecov/codecov-action@v3
+        if: ${{ matrix.node-version == 18 }}
 
   prettier:
     runs-on: ubuntu-latest
