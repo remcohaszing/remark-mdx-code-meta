@@ -2,6 +2,7 @@ import { Parser } from 'acorn';
 import jsx from 'acorn-jsx';
 import { BaseNode, Program } from 'estree';
 import { Code, Parent, Root } from 'mdast';
+import { MdxFlowExpression } from 'mdast-util-mdx';
 import { Plugin, Transformer } from 'unified';
 import { visit } from 'unist-util-visit';
 
@@ -23,7 +24,7 @@ const transformer: Transformer<Root> = (ast) => {
       type: 'mdxFlowExpression',
       value,
       data: { estree },
-    };
+    } as MdxFlowExpression;
   });
 };
 

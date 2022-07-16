@@ -29,7 +29,7 @@
     "node": ">=14"
   },
   "scripts": {
-    "prepack": "tsc --noEmit",
+    "prepack": "tsc --noEmit false",
     "start": "tsx watch test.ts",
     "test": "c8 tsx test.ts"
   },
@@ -52,6 +52,7 @@
     "eslint-config-remcohaszing": "^5.0.0",
     "eslint-plugin-jsx-a11y": "^6.0.0",
     "eslint-plugin-react": "^7.0.0",
+    "mdast-util-mdx": "^2.0.0",
     "prettier": "^2.0.0",
     "to-vfile": "^7.0.0",
     "tsx": "^3.0.0",
