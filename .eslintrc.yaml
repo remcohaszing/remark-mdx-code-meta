@@ -3,5 +3,6 @@ extends:
   - remcohaszing
 rules:
   no-param-reassign: off
+  import/extensions: off
   import/no-extraneous-dependencies: off
   import/no-unresolved: off
