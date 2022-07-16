@@ -34,6 +34,7 @@
     "test": "c8 tsx test.ts"
   },
   "dependencies": {
+    "@types/mdast": "^3.0.0",
     "acorn": "^8.0.0",
     "acorn-jsx": "^5.0.0",
     "estree-util-is-identifier-name": "^2.0.0",
