@@ -5,6 +5,7 @@
   "author": "Remco Haszing <remcohaszing@gmail.com>",
   "license": "MIT",
   "type": "module",
+  "exports": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/remcohaszing/remark-mdx-code-meta.git"
@@ -19,11 +20,11 @@
     "mdx",
     "remark",
     "remark-plugin",
-    "unified",
-    "xdm"
+    "unified"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "engines": {
     "node": ">=14"
