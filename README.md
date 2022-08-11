@@ -30,7 +30,7 @@ The following script:
 ```js
 import { readFileSync } from 'fs';
 
-import { remarkMdxCodeMeta } from 'remark-mdx-code-meta';
+import remarkMdxCodeMeta from 'remark-mdx-code-meta';
 import { compileSync } from 'xdm';
 
 const { contents } = compileSync(readFileSync('example.mdx'), {
