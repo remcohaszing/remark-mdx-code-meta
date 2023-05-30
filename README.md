@@ -7,6 +7,9 @@
 
 A [remark](https://remark.js.org) MDX plugin for using markdown code block metadata
 
+> **Warning** This package has been deprecated. Use
+> [`rehype-mdx-code-props`](https://github.com/remcohaszing/rehype-mdx-code-props) instead.
+
 ## Installation
 
 ```sh
